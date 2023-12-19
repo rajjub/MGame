@@ -30,6 +30,9 @@ public class MemoryGameGridPanel extends JPanel {
 
 	public MemoryGameGridPanel(MemoryGameFrame view, MemoryGame model) {
 		int width = this.getPreferredSize().width;
+		
+		System.out.println("============" + width);
+		width = 600;
 		this.model = model;
 		this.topMargin = 0;
 		this.letterWidth = 64;

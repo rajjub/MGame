@@ -37,7 +37,7 @@ public class MemoryGame {
 		}
 		
 		this.gameBoard = new GameBoard(row, col, new LatinAlphabet());
-		this.gameBoard.displayBoard(false);
+		//this.gameBoard.displayBoard(false);
 
 		//game.playGame();
 

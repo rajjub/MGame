@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class LeaderBoardFileOperation {
 	
-	private static final String leaderBoardFileName = "resources/LeaderBoard.txt";
+	private static final String leaderBoardFileName = "src/main/resources/LeaderBoard.txt";
 
 	
 	public static LeaderBoard loadLeaderBoardDetails() {

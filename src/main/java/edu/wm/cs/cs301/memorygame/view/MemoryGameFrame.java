@@ -5,6 +5,8 @@ import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -47,6 +49,12 @@ public class MemoryGameFrame {
 				shutdown();
 			}
 		});
+		
+		frame.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent me) {
+                model.getGameBoard().flipCard(1, 1);
+            }
+        });
 		
 		frame.add(createTitlePanel(), BorderLayout.NORTH);
 		frame.add(gridPanel, BorderLayout.CENTER);
